@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 100px;
+  width: 280px;
+  height: 80px;
+  z-index: 0;
+  border: 2px solid #000;
+  border-radius: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.inner {
+  position: relative;
+  width: 96%;
+  height: 90%;
+  color: rgb(83, 81, 81);
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(136, 134, 134, 0.089);
+  z-index: 2;
+  border: 1.5px solid rgb(94, 92, 92);
+  border-radius: 15px;
+  box-shadow: 0 30px rgba(247, 246, 246, 0.438) inset;
+}
+.button::after {
+  content: "";
+  position: absolute;
+  background: rgb(187, 185, 185);
+  width: 99%;
+  height: 96%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  border: 1.3px solid white;
+}
+.inner::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 28px;
+    background: gray;
+    top: 50%;
+    right: 4%;
+    transform: translateY(-55%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.inner::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 28px;
+    background: gray;
+    top: 50%;
+    left: 4%;
+    transform: translateY(-55%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+/*
+
