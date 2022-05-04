@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Page</title>
+    <link rel="stylesheet" href="stylishCustomer.css">
+</head>
+<body>
+  <form class="customerPage_form">
+    <!-- 2 inputs for user name and last name -->
+        <label class="customerPage_form__userInfo" for="first_name">First Name:</label>
+        <input class="customerPage_form__userInfo" type="text" name="name" id="first_name">
+        <label class="customerPage_form__userInfo" for="last_name">Last Name:</label>
+        <input class="customerPage_form__userInfo" type="text" name="name" id="last_name">
+<!-- Calendar input -->
+      <h3>Date:</h3>
+        <input type="date" name="" id="calendar">
+    <br>
+<!-- Discount checkbox toggle -->
+        <label class="customerPage_form__discountStyle" for="discount">Discount:</label>
+        <input class="customerPage_form__discountStyle" type="checkbox" id="discount">
+    <br>
+      <h3>Select a Payment method:</h3>
+    <br>
+    <!-- Payment method custom radio buttons -->
+        <input type="radio" name="payment" id="payPal">
+        <label class="customerPage_form__customRadio" for="payPal">PayPal</label>
+        <input type="radio" name="payment" id="visa">
+        <label class="customerPage_form__customRadio" for="visa">VISA</label>
+        <input  type="radio" name="payment" id="steamVallet">
+        <label class="customerPage_form__customRadio" for="steamVallet">Steam Vallet</label>
+
+
+        <button id="btnSubmit">Submit all Data</button>
+  </form>
+
+  <script src="customerPage.js"></script>
+</body>
+</html>

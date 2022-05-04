@@ -1,1 +1,2 @@
-# All the projects I've done in mentorship course from start till today. Check branches.
+# taking data from user, including hard coded discount and price. Customer can toggle discount and use  only one of the payment methods
+# all the data saved into object and shown in the console log

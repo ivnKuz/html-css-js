@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+/* making for look alright and centering everything inside */
+.customerPage_form{
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    border: 3px solid black;
+    width: 500px;
+    height: 360px;
+    background-color: rgb(238, 235, 235);
+    border-radius: 4px;
+}
+/* Customizing 2 name & last name inputs */
+.customerPage_form .customerPage_form__userInfo{
+    display: inline-block;
+    margin: 10px 10px;
+    height: 25px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+/* hiding radio buttons so we can customize labels */
+input[type="radio"]{
+    display: none;
+}
+/* Custom radio buttons, customizing its labels */
+.customerPage_form__customRadio{
+    color: rgb(80, 79, 79);
+    font-size: 26px;
+    margin: auto 9px;
+    padding: 5px 5px;
+    border: 3px solid rgba(137, 233, 124, 0.4);
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+/* just a pointers on hover over labels for radio buttons */
+.customerPage_form__customRadio:hover,
+#btnSubmit{
+    cursor: pointer;
+}
+/* when radio button is checked then custom label changes color */
+input[type="radio"]:checked + .customerPage_form__customRadio{
+    background-color: rgb(83, 167, 247);
+    color: aliceblue;
+    border: 2px solid black;
+    transition: 0.2s ease-in-out;
+}
+/* styling discount checkbox label */
+.customerPage_form__discountStyle{
+    font-size: 26px;
+    margin: 10px 10px;
+}
+/* adding hover style */
+.customerPage_form__discountStyle:hover{
+    cursor: pointer;
+    color: aquamarine;
+}
+/* customizing checkbox */
+input[type='checkbox']{
+    width:20px;
+    height: 20px;
+}
+
+#btnSubmit{
+    display: block;
+    margin-top: 40px;
+    margin-left: 125px;
+    width: 250px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 26px;
+    background: linear-gradient(#ca90f1, #4d538f);
+    color: aliceblue;
+    }
