@@ -1,1 +1,1 @@
-# bike shop, first tries in html and css, javascript validation was added later
+# bike shop, in html and css, responsiveness. Javascript validation was added later
