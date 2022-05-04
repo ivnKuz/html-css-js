@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.formStyle {
+  position:relative; 
+  font-size: 26px;
+  font-weight: 500;
+  display: inline-block;
+  margin: 20px 60px;
+}
+.inputStyle {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 3px;
+  height: 30px;
+  width: 250px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.formStyle > label {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.underlineRed{
+  border-bottom: 2px solid red;
+  box-shadow: 0 1px 2px 0 red;
+}
+
+.underlineGreen{
+  border-bottom: 2px solid #98fa04;
+  box-shadow: 0 1px 2px 0 #98fa04;
+}
+.createAccountForm{
+  position: absolute;
+  right: 10vw;
+  top: 10px;
+}
+.errorMessage{
+  color: red;
+  font-size: 20px;
+  margin-left: 5px;
+}
+.error{
+  color: red;
+  font-size: 1.5rem;
+  font-weight: 500;
+
+}
