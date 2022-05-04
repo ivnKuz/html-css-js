@@ -1,0 +1,37 @@
+.top-container {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+  }
+.headline{
+    padding: 10px 15px;
+    background: rgb(240, 41, 41);
+    color: #f1f1f1;
+}
+/* sticky class to add the sticky feature on the go */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  /* just styling all the elements */
+.content{
+      padding: 16px;
+      max-width: 750px;
+      text-align: center;
+  }
+.sticky + .content {
+    padding-top: 102px;
+  }
+.content p {
+      font-size: 40px;
+  }
+#myHeader2{
+      background: blue;
+  }
+#myHeader3{
+    background: rgb(97, 241, 13);
+}
+#myHeader4{
+    background: rgb(235, 17, 209);
+}
