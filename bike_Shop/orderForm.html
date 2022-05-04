@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike order</title>
+    <link rel="stylesheet" href="orderFormStyle.css">
+</head>
+<body>
+
+    <header id="main-header"><img src="" alt=""></header>
+<!-- main structure takes the whole body betwee header and footer-->
+<div class="main-structure">
+
+      <div class="main-structure__left content">
+        <a class="left__link" href="mainPage.html">Home</a>
+        <a class="left__link" href="about.html">About</a>
+        <a class="left__link" href="contactUs.html">Contact us</a>
+        <a class="left__link" href="">Order</a>
+      </div>
+
+  <section class="wrapper">
+
+    <form class="bikeForm formStyle">
+      <h2>Bike selection:</h2>
+      <br>
+      <label for="listOfBikes">Choose a bike:</label>
+      <select class="bikeForm__select inputStyle" id="listOfBikes"></select>
+      <textarea class=" bikeForm__input inputStyle"
+        placeholder="leave a comment..."
+        id="BikeCommentArea"></textarea>
+    </form>
+
+    <form class="billingForm formStyle">
+      <h2>Billing Adress:</h2>
+      <br>
+    <div class="billingForm_inputControl">
+      <label for="firstName">First Name</label>
+      <input class="billingForm__input inputStyle" id="firstName" type="text" />  
+      <div class="error"></div>
+    </div>
+
+    <div class="billingForm_inputControl">
+      <label for="lastName">Last Name</label>
+      <input class="billingForm__input inputStyle" id="lastName" type="text" />
+      <div class="error"></div>
+    </div>
+
+    <div class="billingForm_inputControl">
+      <label for="streetAdress">Street Adress</label>
+      <input class="billingForm__input inputStyle" id="streetAdress" type="text" />
+      <div class="error"></div>
+    </div>
+
+      <label for="regionList">Choose region</label>
+      <select class="billingForm__select inputStyle" id="regionList"></select>
+
+    <div class="billingForm_inputControl">
+      <label for="zip-code">Zip-code</label>
+      <input class="billingForm__input inputStyle" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" id="zip-code" />
+      <div class="error"></div>
+    </div>
+
+    <div class="billingForm_inputControl">
+      <label for="phoneNum">Phone Number</label>
+      <input class="billingForm__input inputStyle" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" id="phoneNum" />
+      <div class="error"></div>
+    </div>
+
+    </form>
+
+    <form class="deliveryForm formStyle">
+      <h2>Delivery Adress:</h2>
+      <br>
+    <div class="deliveryForm_inputControl">
+      <label for="asBilling">Same as Billing Adress</label>
+      <input type="checkbox" class="deliveryForm_input inputStyle" id="asBilling" />
+      <div class="error"></div>
+    </div>
+
+    <div class="deliveryForm_inputControl">
+      <label for="firstName">First Name</label>
+      <input class="deliveryForm__input inputStyle " id="del_firstName" type="text" />
+      <div class="error"></div>
+    </div>
+
+    <div class="deliveryForm_inputControl">
+      <label for="lastName">Last Name</label>
+      <input class="deliveryForm__input inputStyle" id="del_lastName" type="text" />
+      <div class="error"></div>
+    </div>
+
+    <div class="deliveryForm_inputControl">
+      <label for="streetAdress">Street Adress</label>
+      <input class="deliveryForm__input inputStyle" id="del_streetAdress" type="text" />
+      <div class="error"></div>
+    </div>
+
+      <label for="regionList">Choose region</label>
+      <select class="deliveryForm__select inputStyle" id="del_regionList"></select>
+
+    <div class="deliveryForm_inputControl">
+      <label for="zip-code">Zip-code</label>
+      <input class="deliveryForm__input inputStyle" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" id="del_zip-code" />
+      <div class="error"></div>
+    </div>
+
+    <div class="deliveryForm_inputControl">
+      <label for="phoneNum">Phone Number</label>
+      <input class="deliveryForm__input inputStyle" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" id="del_phoneNum" />
+      <div class="error"></div>
+    </div>
+
+    </form>
+
+    <form class="deliveryDateForm formStyle">
+        <h2>Delivery Date:</h2>
+        <br>
+        <label for="day">Day:</label>
+        <select class="deliveryDateForm__input inputStyle" name="day" id="day"></select>
+
+        <label for="month">Month:</label>
+        <select class="deliveryDateForm__input inputStyle" name="month" id="month"></select>
+
+        <label for="year">Year:</label>
+        <select class="deliveryDateForm__input inputStyle" name="year" id="year"></select>
+    </form>
+
+    <form class="createAccountForm formStyle">
+        <h2>Create account?</h2>
+        <div class="createAccountForm_inputControl">
+          <label class="labelsClass" for="userName">User Name:</label>
+          <input class="inputStyle" type="text" id="userName">
+          <div class="error"></div>
+        </div>
+  
+        <div class="createAccountForm_inputControl">
+          <label class="labelsClass" for="userPass">Password:</label>
+          <input class="inputStyle" type="password" id="userPass">
+          <div class="error"></div>
+        </div>
+  
+        <div class="createAccountForm_inputControl">
+          <label class="labelsClass" for="userConfirm">Confirm Password:</label>
+          <input class="inputStyle" type="password" id="userConfirm">
+          <div class="error"></div>
+        </div>
+        
+        <button class="inputStyle btnStyle" type="submit" id="createUserBtn">Create</button>
+    </form>
+
+
+    <form class="paymentForm formStyle">
+      <h2>Payment information</h2>
+      <br>
+      <div class="paymentForm_inputControl">
+        <label for="cardNum">Card Number:</label>
+        <input class="paymentForm__input inputStyle" id="cardNum" required type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  maxlength="16" />
+        <div class="error"></div>
+      </div>
+      
+      
+      <label for="expiration">Expiration Date:</label>
+      <input class="paymentForm__input inputStyle" id="expiration" type="month" min="2022-03" max="2030-12" value="2022-03" />
+
+      <div class="paymentForm_inputControl">
+        <label for="cvv">CVV</label>
+        <input class="paymentForm__input inputStyle" id="cvv" required type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  maxlength="3" />
+        <div class="error"></div>
+      </div>
+      
+      <button class="inputStyle btnStyle" id="submitAllData" type="submit" >Submit Data</button>
+    </form>
+
+    
+    
+    <script src="validation.js"></script>
+</section>
+
+      <aside class="main-structure__right content">
+        <h3 class="text-title">search</h3>
+      </aside>
+
+</div>
+
+    <footer id="main-footer"><h3 class="text-title">2021 (c) Copyright by JoJo</h3></footer>
+</body>
+</html>
