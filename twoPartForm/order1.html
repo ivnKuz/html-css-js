@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="multi_form">
+        <h1>Sign Up</h1>
+        <div class="header">
+            <div class="step active">Your info</div>
+            <div class="step ">Your preferences</div>
+        </div>
+        <!-- first tab Info tab -->
+        <div class="tab on">
+            
+            <div>
+                <label for="name">Name</label>
+                <input class="infoStyle" type="text" id="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input class="infoStyle" type="text" id="email">
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input class="infoStyle" type="text" id="phone">
+            </div>
+            <div>
+                <label for="adress">Adress</label>
+                <input class="infoStyle" type="text" id="adress">
+            </div>
+            <div>
+                <label for="city">City</label>
+                <input class="infoStyle" type="text" id="city">
+            </div>
+            <div>
+                <label for="state">State</label>
+                <select name="" id="state">
+                    <option value="">Alaska</option>
+                    <option value="">California</option>
+                    <option value="">Washington</option>
+                    <option value="">Missouri</option>
+                </select>
+            </div>
+            <div>
+                <label for="zip">Zip</label>
+                <input class="infoStyle" type="text" id="zip">
+            </div>
+            
+        <button class="btnStyle" id="btnNext" type="button">Next</button>
+        </div>
+        <!-- preferences tab -->
+        <div class="tab">
+            <h3>Food allergies</h3>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <h3>Frequency</h3>
+            <div>
+                <div>
+                <input class="prefStyle" type="radio" name="Frequency" id="weekly">
+                <label for="weekly">Weekly</label>
+            </div>
+            <div>
+                <input class="prefStyle" type="radio" name="Frequency" id="biweekly">
+                <label for="biweekly">Biweekly</label>
+            </div>
+            <div>
+                <input class="prefStyle" type="radio" name="Frequency" id="monthly">
+                <label for="monthly">Monthly</label>
+            </div>
+            </div>
+            <h3>Package size</h3>
+            <div>
+                <div>
+                <input class="prefStyle" type="radio" name="size" id="taste">
+                <label for="taste">Taste test</label>
+            </div>
+            <div>
+                <input class="prefStyle" type="radio" name="size" id="highlight">
+                <label for="highlight">Healthy highlight</label>
+            </div>
+            <div>
+                <input class="prefStyle" type="radio" name="size" id="plate">
+                <label for="plate">Full plate</label>
+            </div>
+            </div>
+            <button class="btnStyle" type="submit">submit</button>
+        </div>
+
+    </form>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

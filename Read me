@@ -1,1 +1,1 @@
-# All the projects I've done in mentorship course from start till today. Check branches.
+# creating a two part form using 2 html files, and transmiting the data using string query and applying into the hidden fields, then once form is submitted we get the decoded data from the query, but actual form does nothing as there's no server to sent things to.

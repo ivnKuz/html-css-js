@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.multi_form{
+    position: relative;
+    margin: 30px auto;
+    width: 500px;
+}
+h1{
+    margin: auto;
+}
+.header{
+  width: 100%;
+  height: 20%;
+}
+
+.step{
+    display: inline-block;
+    width: 230px;
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    color: gainsboro;
+    background: gray;
+}
+/* if step is active make its style look active */
+.step.active{
+    border: 3px solid black;
+    color: yellow;
+    background: gray;
+}
+/* by default tab is hidden */
+.tab{
+  display: none;
+  width: 100%;
+  padding: 10px;
+}
+/* current active tab user is on is revealed */
+.tab.on{
+    display: block;
+}
+.tab div{
+    padding: 10px;
+    margin: 7px 7px;
+    width: 80%;
+    font-size: 26px;
+    font-weight: 600;
+}
+.infoStyle{
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+}
+.tab select{
+    width: 60%;
+    height: 40px;
+    font-size: 26px;
+}
+.btnStyle{
+    float: right;
+    width: 100px;
+    height: 60px;
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 50px;
+    color: yellow;
+    transition: 0.4s ease-in-out;
+    background: linear-gradient(rgb(208, 207, 207), rgb(177, 167, 137));
+}
+.btnStyle:hover{
+    cursor: pointer;
+    width: 105px;
+    height: 65px;
+}
+.prefStyle{
+height: 20px;
+width: 20px;
+}
