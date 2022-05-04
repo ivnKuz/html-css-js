@@ -1,1 +1,4 @@
-# All the projects I've done in mentorship course from start till today. Check branches.
+# Creating simple web app where user have to enter his name, email and password with the lodgings to their choice
+# using regex checks for email and name
+# displaying created profile when created
+# with mobile version

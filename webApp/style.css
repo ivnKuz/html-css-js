@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    
+}
+/* account create and lodgings form */
+.createAccountForm{
+    position: relative;
+    left: 0;
+    height: fit-content;
+    width: 50vw;
+}
+.createAccountForm div{
+    display: block;
+    margin: 10px 10px;
+    height: auto;
+    width: fit-content;
+}
+.createAccountForm input{
+    position:relative;
+    height: fit-content;
+    width: fit-content;
+    right: 0;
+}
+
+.createAccountForm__lodgings div{
+    display: block;
+    margin: 10px 10px;
+    height: fit-content;
+    width: fit-content;
+    font-size: 1.8rem;
+}
+.createAccountForm__lodgings label{
+    position: relative;
+    
+}
+/* .createAccountForm__lodgings label::before{
+    position: absolute;
+    content: '';
+    border-bottom: 2px solid black;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+} */
+.error{
+    color: red;
+}
+label:hover{
+    cursor: pointer;
+}
+
+#createAccBtn{
+    background-color: rgb(22, 137, 232);
+    color: aliceblue;
+   
+    padding: 0.5rem;
+    font-size: 2rem;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 4px;
+    transition: 0.4s ease-in-out;
+}
+#createAccBtn:hover{
+    cursor: pointer;
+    padding: 0.7rem;
+}
+/* profile form */
+.invisible{
+    display: none;
+}
+.profileForm{
+    position: relative;
+}
+.profileForm div{
+    display: block;
+    margin-bottom: 1.1rem;
+}
+#profilePrefLongings ul{
+    list-style-type: none;
+}
+
+.profileForm__preview
+{
+position: absolute;
+text-align: center;
+
+font-size: 22px;
+background-color:rgb(198, 198, 198);
+top: 10%;
+left: 50%;
+transform: translateX(-50%);
+height: fit-content;
+width: fit-content;
+padding: 1.7rem 1.7rem;
+border: 2px solid black;
+border-radius: 4px;
+}
+/* mobile part? */
+@media only screen and (max-width: 768px){
+    body{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .createAccountForm__lodgings{
+        text-align: center;
+    }
+    .createAccountForm__lodgings input{
+        display: none;
+    }
+    .createAccountForm__ProfileCreation{
+        text-align: center;
+    }
+    input[type='checkbox']:checked + label{
+        color: greenyellow;
+    }
+    .createAccountForm__lodgings div{
+       width: 100%;
+       font-size: 1.7rem;
+       border: 1px solid black;
+       padding: 0.7rem;
+       margin-bottom: 0.7rem;
+    }
+    .createAccountForm{
+        display: block;
+        height: fit-content;
+    }
+    .createAccountForm .inputStyle{
+       font-size: 1.45rem;
+    }
+    .profileForm{
+        text-align: center;
+        height: fit-content;
+    }
+    .profileForm div{
+        width: 100%;
+    }
+    .profileForm__preview{
+        position: relative;
+        width: 100%;
+    }
+    #createAccBtn{
+        width:100%;
+        transform: translateX(3%);
+        align-self: center;
+    }
+    .createAccountForm__ProfileCreation{
+        text-align: center;
+    }
+    
+}
+@media only screen and (max-width: 568px){
+    .createAccountForm .inputStyle{
+        font-size: 1.2rem;
+        transform: translateX(3%);
+     }
+    
+}

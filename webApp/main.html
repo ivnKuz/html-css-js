@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ski National Park: Reserve Cabins</title>
+</head>
+<body>
+    
+    <form class="createAccountForm" action="">
+        <!-- account creation inputs -->
+        <div class="createAccountForm__ProfileCreation">
+    <div>
+        <label for="username">Username</label>
+        <input class="inputStyle" type="text" name="" id="userName">
+        <div class="error" id="userNameError"></div>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input class="inputStyle" type="password" id="password">
+        <div class="error" id="passwordError"></div>
+    </div>
+    <div>
+        <label for="confirmPass">Password(confirm)</label>
+        <input class="inputStyle" type="password" id="confirmPass">
+        <div class="error" id="confirmError"></div>
+    </div>
+    <div>
+        <label for="email">Email Address</label>
+        <input class="inputStyle" type="email" id="email">
+        <div class="error" id="emailError"></div>
+    </div>
+</div>
+    <!-- Preffered Longings part -->
+    <div class="createAccountForm__lodgings">
+        <h3>Preffered Lodgings</h3>
+    <div>
+        <input value="Fire Cabins" type="checkbox" name="" id="fireCabins">
+        <label for="fireCabins">Fire Cabins</label>
+    </div>
+    <div>
+        <input value="Horseshoe Cabins" type="checkbox" name="" id="horseshoe">
+        <label for="horseshoe">Horseshoe Cabins</label>
+    </div>
+    <div>
+        <input value="Spruce Cabins" type="checkbox" name="" id="scpruce">
+        <label for="scpruce">Spruce Cabins</label>
+    </div>
+    <div>
+        <input value="Ursa Major Cabins" type="checkbox" name="" id="ursa">
+        <label for="ursa">Ursa Major Cabins</label>
+    </div>
+    <div>
+        <input value="Bear Meadow Campground" type="checkbox" name="" id="bearMead">
+        <label for="bearMead">Bear Meadow Campground</label>
+    </div>
+    <div>
+        <input value="Lakeside Campground" type="checkbox" name="" id="lakeside">
+        <label for="lakeside">Lakeside Campground</label>
+    </div>
+    <div>
+        <input value="Leadfoot Campground" type="checkbox" name="" id="leadfoot">
+        <label for="leadfoot">Leadfoot Campground</label>
+    </div>
+    <div>
+        <input value="Talus Campground" type="checkbox" name="" id="talus">
+        <label for="talus">Talus Campground</label>
+    </div>
+    <button id="createAccBtn">Create Account</button>
+    </div>
+    
+    </form>
+
+    <form class="profileForm">
+        <div class="profileForm__preview ">
+            <div>
+            <h3>Profile</h3>
+            </div>
+            <h3>Username</h3>
+            <div id="profileUsername">
+                
+            </div>
+            <h3>Email adress</h3>
+            <div id="profileEmail">
+                
+            </div>
+            <div id="profilePrefLongings">
+                <h3>Preffered lodgings</h3>
+                <ul id="ulList">
+                    
+                </ul>
+            </div>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
