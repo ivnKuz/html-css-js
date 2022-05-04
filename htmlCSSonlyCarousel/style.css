@@ -1,0 +1,98 @@
+.carousel-wrapper {
+  position: relative;
+  height: 80vh;
+  width: 80vw;
+  display: block;
+  margin: 50px auto;
+  border: 2px solid black;
+}
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.arrow {
+  border: solid white;
+  border-width: 0 0 3px 3px;
+  display: inline-block;
+  padding: 12px;
+}
+.arrow-prev {
+  left: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+.arrow-next {
+  right: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-138deg);
+}
+
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url("img1.jpg");
+  background-size: cover;
+}
+.item-2 {
+  background: url("img2.jpg");
+  background-size: cover;
+}
+.item-3 {
+  background: url("img3.jpg");
+  background-size: cover;
+}
+*:target ~ .item-1 {
+  opacity: 0;
+}
+#item-1:target ~ .item-1 {
+  opacity: 1;
+}
+#item-2:target ~ .item-2,
+#item-3:target ~ .item-3 {
+  z-index: 3;
+  opacity: 1;
+}
+.carousel-wrapper .controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 5;
+}
+.carousel-wrapper .controls .btn {
+  display: inline-block;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  margin: 0px 1px 15px;
+  opacity: 0.7;
+}
+.carousel-wrapper .controls .btn:hover {
+  opacity: 0.4;
+}
+.carousel-wrapper .controls .btn-1 {
+  background: white;
+}
+*:target ~ .controls .btn-1 {
+  background: transparent;
+}
+#item-1:target ~ .controls .btn-1 {
+  background: white;
+}
+
+#item-2:target ~ .controls .btn-2,
+#item-3:target ~ .controls .btn-3 {
+  background: white;
+}

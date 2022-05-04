@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+}
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(102, 102, 206);
+  z-index: -1;
+}
+#element-red {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    to right,
+    rgb(97, 13, 10),
+    rgba(226, 81, 55, 0.856)
+  );
+  clip-path: polygon(0 0, 15% 0, 40% 100%, 0 100%);
+}
+#element-center-yellow {
+  position: absolute;
+  height: 100vh;
+  width: 35vw;
+  left: 15%;
+  background: linear-gradient(to bottom, rgb(216, 156, 27), rgb(236, 196, 16));
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 71% 100%);
+}
+#element-center-orange {
+  position: absolute;
+  height: 100vh;
+  width: 11vw;
+  left: 42%;
+  z-index: 1;
+  background: linear-gradient(to bottom, rgb(231, 113, 3), rgb(255, 136, 1));
+
+  clip-path: polygon(72% 0%, 98% 0%, 14% 80%, 0% 90%);
+}
+#element-center-dark-blue {
+  position: absolute;
+  height: 100vh;
+  width: 28vw;
+  left: 41%;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgb(24, 18, 122),
+    rgba(30, 13, 182, 1)
+  );
+  clip-path: polygon(42% 0, 100% 0, 1% 100%, 0 100%);
+}
+#element-big-blue {
+  position: absolute;
+  height: 100vh;
+  width: 59vw;
+  left: 41%;
+  z-index: 10;
+
+  background: linear-gradient(
+    to left bottom,
+    rgb(63, 63, 194),
+    rgb(58, 58, 158)
+  );
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 100%);
+}

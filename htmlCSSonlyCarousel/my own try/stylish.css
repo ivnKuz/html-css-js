@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-container {
+  height: 60vh;
+  width: 70vw;
+  border: 5px solid black;
+  margin-top: 20vh;
+}
