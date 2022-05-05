@@ -1,1 +1,1 @@
-# Using https://openweathermap.org/api, using their data transmited with JSON file to show on my customly created page + using html geolocation to get user's current position and display weather in his city.
+# Using the open weather API, using their data sent with JSON file to show on my customly created page + using html geolocation to get user's current position and display weather in his city.
