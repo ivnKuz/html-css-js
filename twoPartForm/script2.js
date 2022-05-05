@@ -14,13 +14,7 @@ function fillHiddenFields(){
     }
 }
 fillHiddenFields();
-// function getCurrentFormData()
-// {
-//     const frequencyVal = document.querySelector('input[name="Frequency"]:checked').value
-//     const package_sizeVal = document.querySelector('input[name="size"]:checked').value
-//     const allergies = document.getElementById('allergies').value;
-//     return frequencyVal, package_sizeVal, allergies
-// }
+
 
 for(const n of allInputs)
 {
