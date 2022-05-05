@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="multi_form">
+        <h1>Sign Up</h1>
+        <div class="header">
+            <div class="step ">Your info</div>
+            <div class="step active">Your preferences</div>
+        </div>
+        <!-- first tab Info tab -->
+        <div class="tab hidden">
+            
+            <div>
+                <label for="name">Name</label>
+                <input name="Name" class="infoStyle" type="text" id="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input name="Email" class="infoStyle" type="text" id="email">
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input name="Phone" class="infoStyle" type="text" id="phone">
+            </div>
+            <div>
+                <label for="adress">Adress</label>
+                <input name="Adress" class="infoStyle" type="text" id="adress">
+            </div>
+            <div>
+                <label for="city">City</label>
+                <input name="City" class="infoStyle" type="text" id="city">
+            </div>
+            <div>
+                <label for="state">State</label>
+                <select name="State" id="state">
+                    <option value="Alaska">Alaska</option>
+                    <option value="California">California</option>
+                    <option value="Washington">Washington</option>
+                    <option value="Missouri">Missouri</option>
+                </select>
+            </div>
+            <div>
+                <label for="zip">Zip</label>
+                <input name="Zip" class="infoStyle" type="text" id="zip">
+            </div>
+            
+        <button class="btnStyle" id="btnNext" type="button">Next</button>
+        </div>
+        <!-- preferences tab -->
+        <div class="tab on">
+            <h3>Food allergies</h3>
+            <textarea name="Allergies" id="allergies" cols="30" rows="10"></textarea>
+            <h3>Frequency</h3>
+            <div>
+                <div>
+                <input value="Weekly" class="prefStyle freq" type="radio" name="Frequency" id="weekly">
+                <label for="weekly">Weekly</label>
+            </div>
+            <div>
+                <input value="Biweekly" class="prefStyle freq" type="radio" name="Frequency" id="biweekly">
+                <label for="biweekly">Biweekly</label>
+            </div>
+            <div>
+                <input value="Monthly" class="prefStyle freq" type="radio" name="Frequency" id="monthly">
+                <label for="monthly">Monthly</label>
+            </div>
+            </div>
+            <h3>Package size</h3>
+            <div>
+                <div>
+                <input value="Taste test" class="prefStyle packSize" type="radio" name="size" id="taste">
+                <label for="taste">Taste test</label>
+            </div>
+            <div>
+                <input value="Healthy highlight" class="prefStyle packSize" type="radio" name="size" id="highlight">
+                <label for="highlight">Healthy highlight</label>
+            </div>
+            <div>
+                <input value="Full plate" class="prefStyle packSize" type="radio" name="size" id="plate">
+                <label for="plate">Full plate</label>
+            </div>
+            </div>
+            <button id="signUpBtn" class="btnStyle" type="submit">Sign Up</button>
+        </div>
+
+    </form>
+
+
+<script src="script2.js"></script>
+</body>
+</html>

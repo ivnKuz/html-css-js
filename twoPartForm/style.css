@@ -15,7 +15,9 @@ h1{
   width: 100%;
   height: 20%;
 }
-
+.err{
+    background: rgb(237, 177, 177);
+}
 .step{
     display: inline-block;
     width: 230px;
