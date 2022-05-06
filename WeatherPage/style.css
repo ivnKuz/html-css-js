@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+.currentWeather{
+    display: block;
+}
+/* making temperature icon and text be on one line */
+.currentWeather__temperature{
+    display: inline-block;
+}
+/* weather icon sizing */
+#weatherIcon img {
+    width: 40px;
+    height: 40px;
+}
+/* making background for table, serves as border lines */
+.currentWeather__table{
+    background: rgb(112, 112, 112);
+}
+/*  */
+.currentWeather__table--row td{
+    background-color: rgb(238, 238, 238);
+    max-height: auto;
+    max-width: 300px;
+    font-size: 26px;
+    font-weight: 100;
+    padding: 8px;
+}
+/* styling city name and temperature texts to be bigger */
+#city,
+#temperature
+{
+    font-size: 26px;
+    font-weight: 800;
+}
+
+
+/* container width 5 day forecast */
+.fiveDayWeather__table--container{
+    display: block;
+    position: relative;
+    width: 60vw;
+}
+
+.fiveDayWeather__table{
+    max-width: fit-content;
+}
+/* styling table headers for 5 day forecast */
+.fiveDayWeather__table--head{
+    display: block;
+    background: rgb(175, 175, 175);
+    font-size: 26px;
+    height: 40px;
+    padding: 5px;
+}
+/* added a bit of space inside of table data elements */
+.fiveDayWeather__table--data1,
+.fiveDayWeather__table--data2{
+    padding: 4px;
+    font-family: cursive;
+}
+/* styling images and text for 5 day forecast */
+.fiveDayWeather__table--data1 img,
+p{
+    display: inline;
+    height: 50px;
+    margin: auto 10px;
+    width: 50px;
+}
+/* rows dispay for 5 day forecast  */
+.fiveDayWeather__table--row
+{
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+    border-bottom: 1px solid black;
+}
+/* styling temperature in 5 day forecast */
+.styledTemp
+{
+    background: rgba(145, 145, 145, 0.767);
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    padding: 1px;
+}
