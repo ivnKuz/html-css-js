@@ -187,8 +187,9 @@ function weekDayName(date)
 {
     let Ldate = new Date(date);
     let numberOfTheWeekDay = Ldate.getDay();
-    const weekDays = ['Mon.','Tue.','Wed.','Thu.','Fri.','Sat.', 'Sun.'];
-    return weekDays[numberOfTheWeekDay -1];
+//Sunday first, Israel days of week
+    const weekDays = [ 'Sun.','Mon.','Tue.','Wed.','Thu.','Fri.','Sat.',];
+    return weekDays[numberOfTheWeekDay];
 }
 //get month name by the date
 function monthByDate(date)
