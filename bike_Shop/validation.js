@@ -90,7 +90,7 @@ const listOfRegions = [
   "Poland",
   "Britain",
   "France",
-  "Tifa's Italy",
+  "Italy",
   "Outer Heaven",
 ];
 
