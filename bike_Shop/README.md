@@ -1,2 +1,1 @@
-# Task 1.0 implement layouts with blocks positioning
-
+# bike shop, in html and css, responsiveness. Javascript validation was added later
