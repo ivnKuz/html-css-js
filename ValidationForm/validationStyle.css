@@ -3,21 +3,25 @@
   margin: 0;
   padding: 0;
 }
-body{
+
+body {
   display: flex;
   flex-direction: column;
+  background-color: darkslategray;
+  color: azure;
 }
 
 
 
 
 .formStyle {
-  position:relative; 
+  position: relative;
   font-size: 26px;
   font-weight: 500;
   display: inline-block;
   margin: 20px 60px;
 }
+
 .inputStyle {
   display: block;
   font-size: 1.5rem;
@@ -28,30 +32,35 @@ body{
   margin-left: 5px;
   margin-top: 5px;
 }
-.formStyle > label {
+
+.formStyle>label {
   margin-left: 5px;
   margin-top: 5px;
 }
-.underlineRed{
+
+.underlineRed {
   border-bottom: 2px solid red;
   box-shadow: 0 1px 2px 0 red;
 }
 
-.underlineGreen{
+.underlineGreen {
   border-bottom: 2px solid #98fa04;
   box-shadow: 0 1px 2px 0 #98fa04;
 }
-.createAccountForm{
+
+.createAccountForm {
   position: absolute;
   right: 10vw;
   top: 10px;
 }
-.errorMessage{
+
+.errorMessage {
   color: red;
   font-size: 20px;
   margin-left: 5px;
 }
-.error{
+
+.error {
   color: red;
   font-size: 1.5rem;
   font-weight: 500;
